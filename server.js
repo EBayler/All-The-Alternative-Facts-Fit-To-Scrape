@@ -54,7 +54,7 @@ app.get("/", function (req, res) {
     }, function (err, data) {
         if (data.length === 0) {
             res.render("placeholder", {
-                message: "There's nothing scraped yet. Please click \"Scrape For Newest Articles\" for fresh and delicious news."
+                message: "There's nothing scraped yet. Please click \"Scrape For Newest Articles\" for fresh alternative facts."
             });
         } else {
             res.render("index", {
@@ -110,7 +110,7 @@ app.get("/saved", function (req, res) {
     }, function (err, data) {
         if (data.length === 0) {
             res.render("placeholder", {
-                message: "You have not saved any articles yet. Try to save some delicious news by simply clicking \"Save Article\"!"
+                message: "You have not saved any articles yet. Try to save some alternative facts by simply clicking \"Save Article\"!"
             });
         } else {
             res.render("saved", {
